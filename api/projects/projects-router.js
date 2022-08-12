@@ -30,7 +30,7 @@ router.put("/:id", validateProjectId, validateProject, (req, res) => {
 });
 
 router.delete("/:id", validateProjectId, (req, res) => {
-  Projects.remove(req.params.id).then((num) => res.send("Project deleted."));
+  Projects.remove(req.params.id).then((num) => res.send("Project removed."));
 });
 
 router.get("/:id/actions", validateProjectId, (req, res) => {
